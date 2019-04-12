@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Login
+</title>
+<link rel="stylesheet" type="text/css" href="system.css">
+<script>
+function val(){
+var em=document.getElementById("email1").value;
+var pa=document.getElementById("pass").value;
+if(pa=="admin123"&&em=="admin@123")
+{
+}
+}
+function val(){
+var em=document.getElementById("email1").value;
+var pa=document.getElementById("pass").value;
+var p=document.getElementById("p1");
+if(pa=="admin123" && em=="admin@123")
+{
+p.innerHTML="Valid User";
+p.style.color="white";
+p.style.backgroundColor="green";
+}
+else
+{
+p.innerHTML="Invalid User";
+p.style.color="white";
+p.style.backgroundColor="Red";
+}
+}
+</script>
+</head>
+<body>
+<div id="login">
+<div>
+<h1>Login</h1><br/>
+<form id="yash" > 
+<input type="email" id="email1" placeholder="email" onfocus="field(email,email1)" id="email1" required autofocus/>
+<br/><br/>
+<input type="password" id="pass" placeholder="password" name="pass" required/>
+<br/><br/>
+<a href="Registrationform.html">Create account</a>
+<input type="button" onclick="val()" name="login" value="Login"/>
+</form>
+<p id="p1"></p>
+
+</div></div>
+</body>
+</html>
